@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+.MainBody{
+    margin-top: 40px;
+}
+.MainBody h2{
+font-size: 38px;
+background: rgb(163, 163, 239);
+}
+
+.weatherDetail{
+    /* background-image: url("../../../public/cloud.jpg"); */
+    background-position: center;
+    border: 5px solid rgb(25, 16, 16);
+    width: 55vw;
+    height: 40vh;
+    margin: 0 auto;
+}
+.cityName{
+    width: 100%;
+    background-color: rgb(139, 111, 111);
+    text-align: left;
+    height: 8vh;
+    font-size: 1.6rem;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 7px 20px;
+}
+.todayWeather{
+    float: left;
+    display: flex;
+    padding: 8px;
+}
+.todayTemp{
+    font-size: 4rem;
+    font-weight: bold;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+}
+.todayCloud,.tempDayNight{
+    font-size: 2rem;
+    font-weight: bold;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+}
+.tempDayNight{
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+}
+.tempIcon{
+    font-size: 7em;
+    color: rgb(225, 165, 12);
+    float: right;
+    margin-right: 25px;
+}
+
+@media screen and (max-width: 1440px) {
+    .weatherDetail{
+        height: 60vh;
+        margin: 0 auto;
+    }
+    .cityName{
+        height: 9vh;
+        font-size: 1.5rem;
+        padding: 1px 20px;
+    }
+    
+}
+@media screen and (max-width: 1024px) {
+    .weatherDetail{
+        width: 70vw;
+        height: 30vh;
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width: 768px) {
+    .weatherDetail{
+        width: 95vw;
+    }
+}
+
+@media screen and (max-width: 376px) {
+    .tempIcon{
+        position: absolute;
+        left: 250px;
+    }
+}
